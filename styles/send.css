@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --primary-color: #efefef;
+    --secondary-color: #212121;
+    --third-color: #f04c21;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 700px;
+    font-family: "Karit", sans-serif;
+}
+
+.container {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    padding: 3rem;
+    border-radius: 12px;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    color: var(--third-color);
+}
+
+.section h3, .section h1 {
+    text-align: center;
+}
+
+@media (min-width: 720px) {
+    .section {
+        width: 50%;
+    }
+}

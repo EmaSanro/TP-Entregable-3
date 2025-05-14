@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form | Emanuel San Roman</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="module" src="js/main.js"></script>
 </head>
 <body>
     <div class='container'>
@@ -15,18 +15,18 @@
             <p id='parr'>Si tienes alguna duda puede comunicarte con nosotros mediante el formulario que te dejamos</p>
             <h3>Tambien puede seguirnos en nuestras redes sociales para enterarte de todas las novedades! ⬇️⬇️</h3>
             <div class='social-net'>
-                <a href="#"><img src="instagram.png" alt="instagram" srcset="">Instagram</a>
-                <a href="#"><img src="facebook.png" alt="facebook" srcset="">Facebook</a>
-                <a href="#"><img src="x.png" alt="X" srcset="">X</a>
+                <a href="#"><img src="images/instagram.png" alt="instagram" srcset="">Instagram</a>
+                <a href="#"><img src="images/facebook.png" alt="facebook" srcset="">Facebook</a>
+                <a href="#"><img src="images/x.png" alt="X" srcset="">X</a>
             </div>
         </section>
         <section class="section-right">
             <form action="#" class='form'>
                 <h1>Envianos tu Mensaje</h1>
-                <p class='error'>Tienes que completar alguno de los dos campos (email o telefono)*</p>
                 <div class="label-input" id='div-tel'>
-                    <input type="tel" id='telefono' name='telefono' />
-                    <label for="Telefono">Telefono</label>
+                    <p class='error'>Tienes que completar alguno de los dos campos (email o telefono y mensaje)*</p>
+                    <input type="number" id='telefono' name='telefono' />
+                    <label for="Telefono">Telefono(cod. area)</label>
                 </div>
                 <div class="label-input" id='div-email'>
                     <input type="email" name="email" id='email' />
